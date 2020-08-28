@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Guess the number</h4>
+        <p>You have 5 attempts to win</p>
+        <input id="your_guess" type="number" placeholder="Guess your number" class="form-control">
+        <div id="alert_success" class="alert-success">Greate Job, you've got it</div>
+        <div id="alert_low" class="alert-danger">Your guess is too Low</div>
+        <div id="alert_high" class="alert-danger">Your guess is too High</div>
+       <div class="buttons">
+        <button id="submit" class="btn" onclick="submit()">Submit</button>
+        <button id="restart" class="btn" onclick="restart()">Restart</button>
+       </div>
+        <div class="history">
+            <ul id="result"></ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
